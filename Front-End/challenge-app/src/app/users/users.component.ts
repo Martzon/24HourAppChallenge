@@ -12,7 +12,8 @@ import { AddEditUserComponent } from '../components/add-edit-user/add-edit-user.
 export class UsersComponent {
   users: User[] = [];
   currentPage = 0;
-  itemsPerPage = 10;
+  itemsPerPage = 1;
+  totalPage = 0;
   
   constructor(
     private modalService: NgbModal, 
@@ -20,13 +21,14 @@ export class UsersComponent {
   ) { }
 
   ngOnInit() {
-    this.getUsers();
+    this.getUsers(this.currentPage, this.itemsPerPage);
   }
 
-  getUsers() {
-    this.userService.getUsersWithPagination(this.currentPage, this.itemsPerPage, "Id", "").subscribe({
+  getUsers(skip: number, take: number) {
+    this.userService.getUsersWithPagination(skip, take, "Id", "").subscribe({
       next: (data:any) => {
         this.users = data?.items || [];
+        this.totalPage = data?.totalPages || 0;
       },
       error: err => {
         console.error(err);
@@ -50,7 +52,7 @@ export class UsersComponent {
         // Remove the user from the local array or list
         this.users = this.users.filter(u => u.id !== userId);
   
-        this.getUsers()
+        this.getUsers(this.currentPage, this.itemsPerPage)
       },
       error: err => {
         console.error('Failed to delete user:', err);
@@ -66,7 +68,7 @@ export class UsersComponent {
   }
 
   get totalPages() {
-    return Math.ceil(this.users.length / this.itemsPerPage);
+    return Math.ceil(this.totalPage / this.itemsPerPage);
   }
 
   get pages() {
@@ -75,19 +77,22 @@ export class UsersComponent {
 
   prevPage() {
     if (this.currentPage > 1) {
-      this.currentPage--;
+      this.currentPage -= 1;
+      this.getUsers(this.currentPage, this.itemsPerPage);
     }
   }
 
   nextPage() {
     if (this.currentPage < this.totalPages) {
-      this.currentPage++;
+      this.currentPage += 1;
+      this.getUsers(this.currentPage, this.itemsPerPage);
     }
   }
 
   goToPage(page: number) {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
+      this.getUsers(this.currentPage, this.itemsPerPage);
     }
   }
 }

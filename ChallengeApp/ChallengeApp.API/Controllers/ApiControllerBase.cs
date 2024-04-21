@@ -16,7 +16,6 @@ public abstract class ApiControllerBase : ControllerBase
     {
         switch (ex)
         {
-            // TODO: Log 'ex'
             case NotFoundException:
                 return StatusCode(StatusCodes.Status404NotFound, new { message = ex.Message });
             case AlreadyExistsException:
@@ -28,7 +27,6 @@ public abstract class ApiControllerBase : ControllerBase
                 return StatusCode(StatusCodes.Status401Unauthorized,
                     new { message = "Auth Expired" });
             default:
-                // unhandled
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     new { message = ex.Message });
         }
