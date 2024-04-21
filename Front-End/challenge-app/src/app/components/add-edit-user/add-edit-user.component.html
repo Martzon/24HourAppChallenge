@@ -1,0 +1,52 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ action }}</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="modal.dismiss()"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <form #userForm="ngForm" (ngSubmit)="saveUser()" novalidate>
+    <div class="form-group">
+      <label for="userName">Username:</label>
+      <input type="text" id="userName" class="form-control" name="userName" [(ngModel)]="user.userName" required>
+      <div *ngIf="userForm.controls['userName'].invalid && userForm.controls['userName'].touched" class="text-danger">
+        Username is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="form-control" name="email" [(ngModel)]="user.email" required>
+      <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched" class="text-danger">
+        Please enter a valid email address.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" class="form-control" name="firstName" [(ngModel)]="user.firstName" required>
+      <div *ngIf="userForm.controls['firstName'].invalid && userForm.controls['firstName'].touched" class="text-danger">
+        First Name is required.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" class="form-control" name="lastName" [(ngModel)]="user.lastName" required>
+      <div *ngIf="userForm.controls['lastName'].invalid && userForm.controls['lastName'].touched" class="text-danger">
+        Last Name is required.
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">
+        {{ action }}
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

@@ -125,7 +125,7 @@ namespace ChallengeApp.API.Controllers
 
         [HttpPost]
         [Route("createclient")]
-        public async Task<IActionResult> CreateUserClient([FromQuery] CreateUser command)
+        public async Task<IActionResult> CreateUserClient([FromBody] CreateUser command)
         {
             try
             {
@@ -133,7 +133,14 @@ namespace ChallengeApp.API.Controllers
                 var clientRole = new IdentityRole("Client");
 
                 // Default users
-                var client = new ApplicationUser { UserName = command.Email, Email = command.Email, IsActive = true };
+                var client = new ApplicationUser
+                {
+                    UserName = command.Email,
+                    Email = command.Email,
+                    FirstName = command.FirstName,
+                    LastName = command.LastName, 
+                    IsActive = true
+                };
 
                 if (_userManager.Users.All(u => u.UserName != client.UserName))
                 {
