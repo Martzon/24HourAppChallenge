@@ -38,7 +38,6 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
     public DatabaseFacade DatabaseFacade => Database;
     public DbSet<UserGroup> UserGroups => Set<UserGroup>();
     public DbSet<UserUserGroup> UserUserGroups => Set<UserUserGroup>();
-    public DbSet<AuditEvent> AuditEvents => Set<AuditEvent>();
 
 
     protected override void OnModelCreating(ModelBuilder builder)

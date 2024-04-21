@@ -1,7 +1,9 @@
-﻿using ChallengeApp.Application.Common.Interfaces;
+﻿using C9.Standard.Infrastructure.Services;
+using ChallengeApp.Application.Common.Interfaces;
 using ChallengeApp.Infrastructure.Identity;
 using ChallengeApp.Infrastructure.Persistence.Interceptors;
 using ChallengeApp.Infrastructure.Persistence;
+using ChallengeApp.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +20,7 @@ public static class DependencyInjection
         if (configuration.GetValue<bool>("UseInMemoryDatabase"))
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseInMemoryDatabase("ChallengeAppDb"));
+                options.UseInMemoryDatabase("challenge_app"));
         }
         else
         {
@@ -36,8 +38,10 @@ public static class DependencyInjection
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
+        services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IUserService, UserService>();
         services.AddTransient<IDateTime, DateTimeService>();
+        services.AddTransient<IIdentityService, IdentityService>();
 
 
         return services;

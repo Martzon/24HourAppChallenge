@@ -1,10 +1,11 @@
 ﻿using FluentValidation;
 using MediatR;
+using ValidationException = ChallengeApp.Application.Common.Exceptions.ValidationException;
 
 namespace ChallengeApp.Application.Common.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-    where TRequest : IRequest<TResponse>
+     where TRequest : IRequest<TResponse>
 {
     private readonly IEnumerable<IValidator<TRequest>> _validators;
 

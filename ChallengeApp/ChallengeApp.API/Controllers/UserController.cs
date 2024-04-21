@@ -1,4 +1,12 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using ChallengeApp.API.Common;
+using ChallengeApp.Application.UserAggregate.Commands.CreateUser;
+using ChallengeApp.Application.UserAggregate.Commands.DeleteUser;
+using ChallengeApp.Application.UserAggregate.Commands.UpdateUser;
+using ChallengeApp.Application.UserAggregate.Queries;
+using ChallengeApp.Application.UserGroupAggregate.GetUserGroupTab;
+using ChallengeApp.Domain.Enums;
+using ChallengeApp.Infrastructure.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +15,7 @@ namespace ChallengeApp.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    [Authorize(Policy = AuthenticationSchemes.JwtAndAzureAd, Roles = "Administrator")]
+    [Authorize(Roles = "Administrator")]
     public class UserController : ApiControllerBase
     {
         private readonly ILogger<UserController> _logger;
@@ -100,34 +108,6 @@ namespace ChallengeApp.API.Controllers
             }
         }
 
-        [HttpPost]
-        [AllowAnonymous]
-        [Route("forgot-password")]
-        public async Task<IActionResult> Create(ForgotPassword command)
-        {
-            try
-            {
-                return Ok(await Mediator.Send(command));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-        [HttpPost]
-        [Route("update-changepassword-required")]
-        public async Task<IActionResult> UpdateChangePasswordRequired(UpdateChangePasswordRequired command)
-        {
-            try
-            {
-                return Ok(await Mediator.Send(command));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpGet]
         [Route("getuserbyemail")]
         public async Task<IActionResult> GetUserByEmail([FromQuery] GetUserByEmail command)
@@ -169,21 +149,6 @@ namespace ChallengeApp.API.Controllers
                     }
                 }
                 return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-
-        [HttpGet]
-        [Route("usergroups")]
-        public async Task<IActionResult> GetUserGroups([FromQuery] GetUserGroupOptions command)
-        {
-            try
-            {
-                return Ok(await Mediator.Send(command));
             }
             catch (Exception ex)
             {

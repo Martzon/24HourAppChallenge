@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
+using ChallengeApp.Domain.Entities;
 using ChallengeApp.Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -42,8 +43,6 @@ public class ApplicationDbContextInitialiser
         try
         {
             await TrySeedAsync();
-            // TODO: Seed User Groups
-            // TODO: Ensure administrator@localhost.com is Administrator
         }
         catch (Exception ex)
         {
@@ -83,7 +82,7 @@ public class ApplicationDbContextInitialiser
 
         if (_userManager.Users.All(u => u.UserName != administrator.UserName))
         {
-            await _userManager.CreateAsync(administrator, "Administrator1!");
+            await _userManager.CreateAsync(administrator, "AdminP@ssw0rd");
             if (!string.IsNullOrWhiteSpace(administratorRole.Name))
             {
                 await _userManager.AddToRolesAsync(administrator, new[] { administratorRole.Name, userRole.Name });
@@ -115,7 +114,6 @@ public class ApplicationDbContextInitialiser
         }
 
 
-       
         if (!_context.UserGroups.Any())
         {
             _context.UserGroups.Add(new UserGroup

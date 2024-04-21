@@ -1,4 +1,6 @@
-﻿namespace ChallengeApp.Application.Common.Interfaces;
+﻿using ChallengeApp.Application.Common.Models;
+
+namespace ChallengeApp.Application.Common.Interfaces;
 
 public interface IUserService
 {
@@ -13,7 +15,6 @@ public interface IUserService
     Task CreateRolesAsync(string userId, List<string> roles);
     Task UpdateRolesAsync(string userId, List<string> roles);
     Task<List<string>> GetRolesByEmail(string Email);
-    Task<string> GenerateResetPasswordToken(string Email);
     Task<PaginatedList<RoleModel>> GetRoles(string name, string sort, int skip, int take);
     Task<List<RoleModel>> GetAllRoles();
     Task CreateRoleAsync(string name);
