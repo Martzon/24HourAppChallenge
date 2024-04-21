@@ -4,8 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>C9.Standard.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-    <AssemblyName>C9.Standard.$(MSBuildProjectName)</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,8 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChallengeApp.Application\Application.csproj" />
-    <ProjectReference Include="..\ChallengeApp.Infrastructure\Infrastructure.csproj" />
+    <ProjectReference Include="..\ChallengeApp.Application\ChallengeApp.Application.csproj" />
+    <ProjectReference Include="..\ChallengeApp.Infrastructure\ChallengeApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
