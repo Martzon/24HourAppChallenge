@@ -1,5 +1,0 @@
-C:\Users\mdmunoz\source\repos\ChallengeApp\ChallengeApp.Application\obj\Debug\net8.0\ChallengeApp.Application.csproj.AssemblyReference.cache
-C:\Users\mdmunoz\source\repos\ChallengeApp\ChallengeApp.Application\obj\Debug\net8.0\ChallengeApp.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mdmunoz\source\repos\ChallengeApp\ChallengeApp.Application\obj\Debug\net8.0\ChallengeApp.Application.AssemblyInfoInputs.cache
-C:\Users\mdmunoz\source\repos\ChallengeApp\ChallengeApp.Application\obj\Debug\net8.0\ChallengeApp.Application.AssemblyInfo.cs
-C:\Users\mdmunoz\source\repos\ChallengeApp\ChallengeApp.Application\obj\Debug\net8.0\ChallengeApp.Application.csproj.CoreCompileInputs.cache
