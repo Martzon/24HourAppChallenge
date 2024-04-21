@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ChallengeApp.API.props" />
+</Project>
