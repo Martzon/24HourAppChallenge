@@ -1,0 +1,11 @@
+/ChallengeApp/ChallengeApp.Application/bin
+/ChallengeApp/ChallengeApp.Application/obj
+/ChallengeApp/ChallengeApp.Domain/bin
+/ChallengeApp/ChallengeApp.Domain/obj
+/ChallengeApp/ChallengeApp.Infrastructure/bin
+/ChallengeApp/ChallengeApp.Infrastructure/obj
+/ChallengeApp/ChallengeApp.API/bin
+/ChallengeApp/ChallengeApp.API/obj
+/ChallengeApp/ChallengeApp.API/Publish
+/ChallengeApp/.vs
+/ChallengeApp.API.csproj.user

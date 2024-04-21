@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\",
+  "WorkspaceRootPath": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\source\\repos\\challengeapp\\challengeapp.application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE5AE859-6F5C-4DD1-BE02-AE31F9185722}|ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj|c:\\users\\mdmunoz\\documents\\my project\\24hourappchallenge\\challengeapp\\challengeapp.infrastructure\\challengeapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DE5AE859-6F5C-4DD1-BE02-AE31F9185722}|ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj|solutionrelative:challengeapp.infrastructure\\challengeapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\documents\\my project\\24hourappchallenge\\challengeapp\\challengeapp.application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|solutionrelative:challengeapp.application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\source\\repos\\challengeapp\\challengeapp.application\\common\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\documents\\my project\\24hourappchallenge\\challengeapp\\challengeapp.application\\common\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|solutionrelative:challengeapp.application\\common\\behaviours\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\source\\repos\\challengeapp\\challengeapp.application\\challengeapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|c:\\users\\mdmunoz\\documents\\my project\\24hourappchallenge\\challengeapp\\challengeapp.application\\challengeapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{EBF89595-6FB9-4B3A-8711-419C8F996E65}|ChallengeApp.Application\\ChallengeApp.Application.csproj|solutionrelative:challengeapp.application\\challengeapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -22,15 +26,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ChallengeApp.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+              "RelativeToolTip": "ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-21T03:03:52.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ValidationBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
               "RelativeDocumentMoniker": "ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
-              "ToolTip": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
+              "ToolTip": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
               "RelativeToolTip": "ChallengeApp.Application\\Common\\Behaviours\\ValidationBehaviour.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,11 +56,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChallengeApp.Application",
-              "DocumentMoniker": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
+              "DocumentIndex": 3,
+              "Title": "ChallengeApp.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
               "RelativeDocumentMoniker": "ChallengeApp.Application\\ChallengeApp.Application.csproj",
-              "ToolTip": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
+              "ToolTip": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
               "RelativeToolTip": "ChallengeApp.Application\\ChallengeApp.Application.csproj",
               "ViewState": "AQIAAAIAAAAAAAAAAAAgwA8AAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -52,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ConfigureServices.cs",
-              "DocumentMoniker": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\ConfigureServices.cs",
               "RelativeDocumentMoniker": "ChallengeApp.Application\\ConfigureServices.cs",
-              "ToolTip": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\ConfigureServices.cs",
               "RelativeToolTip": "ChallengeApp.Application\\ConfigureServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T01:50:53.229Z",
               "EditorCaption": ""

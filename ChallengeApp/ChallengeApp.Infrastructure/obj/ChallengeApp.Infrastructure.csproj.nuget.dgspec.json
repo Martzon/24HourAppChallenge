@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj": {}
+    "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj": {
+    "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
         "projectName": "ChallengeApp.Infrastructure",
-        "projectPath": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\ChallengeApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mdmunoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -49,6 +49,58 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Audit.DynamicProxy": {
+              "target": "Package",
+              "version": "[25.0.4, )"
+            },
+            "Audit.EntityFramework.Core": {
+              "target": "Package",
+              "version": "[25.0.4, )"
+            },
+            "Audit.NET.SqlServer": {
+              "target": "Package",
+              "version": "[25.0.4, )"
+            },
+            "Audit.WebApi.Core": {
+              "target": "Package",
+              "version": "[25.0.4, )"
+            },
+            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[2.17.5, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

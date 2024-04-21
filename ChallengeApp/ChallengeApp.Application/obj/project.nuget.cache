@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3alJXOJV26lXZYZQy+w8VNPkDX3ORqaCXnTovJ1w69KKM7REtUg4RVt4FdyQBKdiGpd5DeLluglWgHzduFbFaQ==",
+  "dgSpecHash": "H59Gb6Y7Rme3Ec587bqGr4L6RMytPigpD5wiHayVzx7pLnBhM2SvEgbcvbB3S7FYOO6d1uusYMYP+DjqRbt8yg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mdmunoz\\source\\repos\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
+  "projectFilePath": "C:\\Users\\mdmunoz\\Documents\\My Project\\24HourAppChallenge\\ChallengeApp\\ChallengeApp.Application\\ChallengeApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mdmunoz\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mdmunoz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
