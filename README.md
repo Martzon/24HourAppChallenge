@@ -7,7 +7,7 @@
    - Locate the `ConnectionStrings` section and update the `DefaultConnection` value with your database connection string.
 
 2. **Run Entity Framework Migrations:**
-   - Open a `Package Manager Console` terminal or command prompt on your machine.
+   - Open a terminal or command prompt on your machine.
    - Navigate to the Infrastructure Layer Folder where your DbContext class and Migrations folder are locate
    - Run the following command to apply the migrations to your database:
      ```
