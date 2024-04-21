@@ -189,14 +189,6 @@ public class AuthenticateController : ApiControllerBase
 
     }
 
-
-    [Route("api/Me")]
-    [HttpGet]
-    public string GetUser()
-    {
-        return "Hello authenticated user! You UPN is: " + User.FindFirst(ClaimTypes.Upn)?.Value;
-    }
-
     [HttpPost]
     [Route("refresh-token")]
     [AllowAnonymous]
@@ -209,7 +201,7 @@ public class AuthenticateController : ApiControllerBase
             return BadRequest(new { message = "User does not exist." });
         }
 
-        if (user.RefreshToken != model.RefreshToken || user.RefreshTokenExpiryTime < DateTime.Now)
+        if (user.RefreshToken != model.RefreshToken)
         {
             return BadRequest(new { message = "Invalid refresh token." });
         }

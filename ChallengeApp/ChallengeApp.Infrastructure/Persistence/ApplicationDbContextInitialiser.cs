@@ -90,7 +90,7 @@ public class ApplicationDbContextInitialiser
         }
 
         // Default Client User
-        var clientUser = new ApplicationUser { UserName = "client@gmail.com", Email = "client@gmail.com", FirstName = "aag", LastName = "aag", IsActive = true };
+        var clientUser = new ApplicationUser { UserName = "client@gmail.com", Email = "client@gmail.com", FirstName = "FirstClient", LastName = "LastClient", IsActive = true };
 
         if (_userManager.Users.All(u => u.UserName != clientUser.UserName))
         {
