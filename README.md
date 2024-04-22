@@ -34,6 +34,9 @@
 
 3. **Access the Application:**
    - Open your web browser and navigate to `http://localhost:4200` to view the frontend of your application.
+   - Credentials:
+      Username: administrator@gmail.com
+      Password: AdminP@ssw0rd.
 
 ## Notes
 - Make sure to run the backend before starting the frontend.
