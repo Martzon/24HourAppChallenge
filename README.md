@@ -1,4 +1,4 @@
-# 24 Hours Challenge App
+# Clean Architecture with Angular
 
 ## Backend Setup
 
